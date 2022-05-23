@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+:root {
+  --main-bg-color: #f4f4f4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  background-color: var(--main-bg-color);
+  color: #626776;
+}
+
+.menu {
+  position: fixed;
+  background: #6e6f72;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+
+  text-align: center;
+}
+a {
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.85s;
+}
+
+:hover a {
+  color: #d94f5c;
+}
+
+#login-container {
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-size: 15px;
+}
+
+form {
+  box-sizing: border-box;
+  border: 5px solid #f1f1f1;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 16px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #d94f5c;
+  color: white;
+  padding: 14px 0;
+  margin: 10px 0;
+  border: none;
+  cursor: grabbing;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 18;
+}
+button:hover {
+  opacity: 0.8;
+}
+.formcontainer {
+  text-align: left;
+  margin: 24px 50px 12px;
+}
+.container {
+  padding: 16px 0;
+  text-align: left;
+}
+span.psw {
+  float: right;
+  padding-top: 0;
+  padding-right: 15px;
+}
