@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+:root {
+  --main-bg-color: #f4f4f4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  background-color: var(--main-bg-color);
+  color: #626776;
+}
+
+.menu {
+  position: fixed;
+  background: #6e6f72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+
+  text-align: center;
+}
+a {
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.85s;
+}
+
+:hover a {
+  color: #d94f5c;
+}
+
+.welcome {
+  margin-left: 35px;
+  border: 15px;
+  padding-top: 19rem;
+  font-weight: bold;
+}
+
+.my_Name {
+  padding-top: 5px;
+  margin-left: 45px;
+  margin-right: 25px;
+  border: 15px;
+  padding: auto;
+  font-size: 15px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: left;
+}
+
+#info_container {
+  display: grid;
+  place-items: center;
+}
+
+.goal {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 4px;
+  border: 7px;
+}
+
+/* contact styles start*/
+.contact-container {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 40px #000;
+}
+
+.contact-form {
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 40px #000;
+  padding: 30px 40px;
+}
+
+.form input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 10px;
+  width: 100%;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+/* make the message textbox bigger */
+#message {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 10px;
+  font-family: inherit;
+  padding: 40px;
+  width: 200%;
+}
+
+.form button {
+  background-color: #d94f5c;
+  border: 2px solid #2e408eac;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+/* contact styles end*/
+
+/* login style */
+
+.login-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+#login-form {
+  justify-content: center;
+  flex-direction: column;
+}
