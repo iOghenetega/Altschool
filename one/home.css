@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+:root {
+  --main-bg-color: #242323;
+  --main-tx-color: #f4f4f4;
+  --main-nav-color: #f4f4f4;
+  --main-hover-color: #52237b;
+}
+
+.menu {
+  position: relative;
+  background: var(--main-nav-color);
+  width: 100%;
+  height: 10px;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  list-style: none;
+  word-spacing: 4pxpx;
+  letter-spacing: 2px;
+}
+
+.menu li {
+  width: 100%;
+  display: inline;
+  word-spacing: 4pxpx;
+  letter-spacing: 2px;
+}
+a {
+  font-size: 15px;
+  color: var(--main-bg-color);
+  text-decoration: none;
+  transition: all 0.85s;
+}
+
+:hover a {
+  color: var(--main-hover-color);
+}
+
+body {
+  color: var(--main-tx-color);
+}
+
+main {
+  background: var(--main-bg-color);
+  padding-left: 30px;
+}
+
+/* i dont know how or why it works
+but i got the .img-container img and image-container code
+from someone after trying for 3 days to resize my image and everything i did failed
+Just for credit's sake, I'd like to give her a qiuck mention, S/O to
+Uwabor Annase Collins */
+
+.image-container img {
+  display: block;
+  width: 200px;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.name-txt {
+  font-size: 30px;
+}
